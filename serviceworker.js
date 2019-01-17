@@ -15,7 +15,7 @@ self.addEventListener("push", function(event) {
 
 self.addEventListener('notificationclick', function(event) {
     event.notification.close()
-    var url = "/"
+    var url = "https://www.evossol.com/"
     event.waitUntil( clients.matchAll({type: 'window'}).then( function(windowClients) {
             for (var i = 0; i < windowClients.length; i++) {
                 var client = windowClients[i];
